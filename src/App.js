@@ -6,7 +6,13 @@ function App() {
   const [todoList, setTodoList] = useState([]);
 
   function addTodo(content) {
-    const todo = { id: crypto.randomUUID(), done: false, edit: false, content };
+    const todo = {
+      id: crypto.randomUUID(),
+      done: false,
+      edit: false,
+      selected: false,
+      content,
+    };
     setTodoList([...todoList, todo]);
   }
 
@@ -38,6 +44,16 @@ function App() {
     ]);
   }
 
+  function selectTodo(id) {
+    setTodoList([
+      ...todoList.map((todo) =>
+        todo.id === id
+          ? { ...todo, selected: !todo.selected }
+          : { ...todo, selected: false }
+      ),
+    ]);
+  }
+
   return (
     <div className="d-flex justify-content-center align-items-center p-20">
       <div className="card container p-20">
@@ -49,6 +65,7 @@ function App() {
           toggleTodo={toggleTodo}
           toggleTodoEdit={toggleTodoEdit}
           editTodo={editTodo}
+          selectTodo={selectTodo}
         />
       </div>
     </div>
