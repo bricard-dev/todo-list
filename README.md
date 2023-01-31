@@ -14,6 +14,7 @@ Simple todo list app created in JavaScript, HTML and CSS.
 - [Getting started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+- [License](#license)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
@@ -65,6 +66,10 @@ $ npm start
 ```
 
 5. Go to `localhost:3000` to see your todo list
+
+## License
+
+Distributed under the MIT License. See [LICENSE](https://github.com/bricard-dev/todo-list/blob/main/LICENSE) for more information.
 
 ## Contact
 
