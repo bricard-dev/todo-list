@@ -1,4 +1,4 @@
-# Todo JavaScript
+# Todo List
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/bricard-dev/todo-list)
 ![GitHub forks](https://img.shields.io/github/forks/bricard-dev/todo-list)
@@ -20,7 +20,9 @@ Simple todo list app created in JavaScript, HTML and CSS.
 
 ## General Information
 
-This project is inspired by a chapter of the javascript course created by [Dyma](https://www.dyma.fr). It aims to improve my skills on the javascript framework React and its many specificities.
+![Demo](./public/images/demo.png)
+
+This project is inspired by a chapter of the React course created by [Dyma](https://www.dyma.fr). It aims to improve my skills on the javascript framework React and its many specificities.
 
 ### Technologies
 
@@ -79,4 +81,5 @@ Github [@bricard-dev](https://github.com/bricard-dev) · Website [bastienricard.
 
 - [Dyma](https://dyma.fr)
 - [MDN](https://developer.mozilla.org/en-US/)
+- [ReactJS](https://reactjs.org)
 - [Shields.io](https://shields.io)
