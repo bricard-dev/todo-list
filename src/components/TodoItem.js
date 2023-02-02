@@ -1,15 +1,17 @@
+import { useContext } from "react";
+import { TodoDispatcherContext } from "../context/TodoContext";
 import Button from "./Button";
 
-function TodoItem({
-  todo,
-  deleteTodo,
-  toggleTodo,
-  toggleTodoEdit,
-  selectTodo,
-}) {
+function TodoItem({ todo }) {
+  const dispatch = useContext(TodoDispatcherContext);
   return (
     <li
-      onClick={selectTodo}
+      onClick={() => {
+        dispatch({
+          type: "SELECT_TODO",
+          id: todo.id,
+        });
+      }}
       className={`mb-10 d-flex justify-content-center align-items-center p-10 ${
         todo.selected && "selected"
       }`}
@@ -22,7 +24,10 @@ function TodoItem({
         className="mr-15"
         onClick={(event) => {
           event.stopPropagation();
-          toggleTodo();
+          dispatch({
+            type: "TOGGLE_TODO",
+            id: todo.id,
+          });
         }}
       />
       <Button
@@ -30,14 +35,20 @@ function TodoItem({
         className="mr-15"
         onClick={(event) => {
           event.stopPropagation();
-          toggleTodoEdit();
+          dispatch({
+            type: "TOGGLE_EDIT_TODO",
+            id: todo.id,
+          });
         }}
       />
       <Button
         text="Supprimer"
         onClick={(event) => {
           event.stopPropagation();
-          deleteTodo();
+          dispatch({
+            type: "DELETE_TODO",
+            id: todo.id,
+          });
         }}
       />
     </li>
