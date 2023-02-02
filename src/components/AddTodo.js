@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { TodoDispatcherContext } from "../context/TodoContext";
 import Button from "./Button";
 
-function AddTodo({ addTodo }) {
+function AddTodo() {
   const [value, setValue] = useState("");
+  const dispatch = useContext(TodoDispatcherContext);
 
   function handleChange(event) {
     const inputValue = event.target.value;
@@ -11,14 +13,20 @@ function AddTodo({ addTodo }) {
 
   function handleKeyDown(event) {
     if (event.key === "Enter" && value.length) {
-      addTodo(value);
+      dispatch({
+        type: "ADD_TODO",
+        content: value,
+      });
       setValue("");
     }
   }
 
   function handleClick(event) {
     if (value.length) {
-      addTodo(value);
+      dispatch({
+        type: "ADD_TODO",
+        content: value,
+      });
       setValue("");
     }
   }
