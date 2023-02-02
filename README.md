@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Todo List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![GitHub Repo stars](https://img.shields.io/github/stars/bricard-dev/todo-list)
+![GitHub forks](https://img.shields.io/github/forks/bricard-dev/todo-list)
+![GitHub issues](https://img.shields.io/github/issues/bricard-dev/todo-list)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/bricard-dev/todo-list)
 
-## Available Scripts
+Simple todo list app created in JavaScript, HTML and CSS.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [General information](#general-information)
+  - [Technologies](#technologies)
+- [Getting started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## General Information
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Demo](./public/images/demo.png)
 
-### `npm test`
+This project is inspired by a chapter of the React course created by [Dyma](https://www.dyma.fr). It aims to improve my skills on the javascript framework React and its many specificities.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies
 
-### `npm run build`
+- ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+- ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+- ![React](https://img.shields.io/badge/react-61DAFB?style=flat&logo=react&logoColor=black)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this project, make sure that you have installed all of the following prerequisites on your development machine :
 
-### `npm run eject`
+- [Git](https://git-scm.com) (to clone the project)
+- [Node.js](https://nodejs.org/en/) 0.10+
+- [npm](https://www.npmjs.com) Node package management (normally comes with Node.js)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone this repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+$ git clone https://github.com/bricard-dev/todo-list
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Go into the repository
 
-## Learn More
+```
+$ cd todo-list
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+$ npm install
+```
 
-### Code Splitting
+4. Run the app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+$ npm start
+```
 
-### Analyzing the Bundle Size
+5. Go to `localhost:3000` to see your todo list
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+Distributed under the MIT License. See [LICENSE](https://github.com/bricard-dev/todo-list/blob/main/LICENSE) for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact
 
-### Advanced Configuration
+Github [@bricard-dev](https://github.com/bricard-dev) · Website [bastienricard.com](https://bastienricard.com) · Email bastien.ricard-dev@outlook.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Acknowledgments
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Dyma](https://dyma.fr)
+- [MDN](https://developer.mozilla.org/en-US/)
+- [ReactJS](https://reactjs.org)
+- [Shields.io](https://shields.io)
